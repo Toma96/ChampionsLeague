@@ -1,0 +1,93 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="ChampionsLeague.Model.Game">
+    <Position X="6.5" Y="0.5" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAEAIAAAAgAAAAAAAAAAAAAACQAAAAAAAAABAAAA=</HashCode>
+      <FileName>Game.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Group" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ChampionsLeague.Model.Group">
+    <Position X="11.25" Y="1.5" Width="3.75" />
+    <AssociationLine Name="Teams" Type="ChampionsLeague.Model.Team" ManuallyRouted="true" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="12.129" Y="1.5" />
+        <Point X="12.129" Y="0.312" />
+        <Point X="3.806" Y="0.312" />
+        <Point X="3.806" Y="0.75" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.039" Y="0.058" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAACAAAAAAAAAAEAAAAAAQAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>Group.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsCollectionAssociation>
+      <Property Name="Teams" />
+      <Property Name="Games" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ChampionsLeague.Model.Team">
+    <Position X="0.5" Y="0.75" Width="3.5" />
+    <AssociationLine Name="Group" Type="ChampionsLeague.Model.Group">
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="0.213" Y="-0.366" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>QAAAAEAAAAAAgAAEAgAABAQAQIAgAABAAAAAgAAgAAA=</HashCode>
+      <FileName>Team.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Group" />
+    </ShowAsAssociation>
+    <ShowAsCollectionAssociation>
+      <Property Name="Games" />
+      <Property Name="Players" />
+    </ShowAsCollectionAssociation>
+  </Class>
+  <Class Name="ChampionsLeague.Model.Player">
+    <Position X="5" Y="3.5" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAgAAEAAAAAAQAAACABAAQEAAAAAAABAA=</HashCode>
+      <FileName>Player.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="Team" />
+    </ShowAsAssociation>
+  </Class>
+  <Interface Name="ChampionsLeague.Model.Repositories.IGameRepository">
+    <Position X="6.75" Y="3.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAQKAAAAAAAAAgAAAAAAAAAAEAQAgAAAAAAAAAIAAAA=</HashCode>
+      <FileName>Repositories\IGameRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChampionsLeague.Model.Repositories.IGroupRepository">
+    <Position X="11.25" Y="4" Width="3.25" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAgAAwEAACAAAAIABA=</HashCode>
+      <FileName>Repositories\IGroupRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChampionsLeague.Model.Repositories.ITeamRepository">
+    <Position X="0.75" Y="4.75" Width="3" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAQAAAAAAASAAAAAAAQAAAAgAAEAAAAAAA=</HashCode>
+      <FileName>Repositories\ITeamRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Interface Name="ChampionsLeague.Model.Repositories.IPlayerRepository">
+    <Position X="4.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAABAAAEAAAAAAAAAQAAAgAgAAAEAAAA=</HashCode>
+      <FileName>Repositories\IPlayerRepository.cs</FileName>
+    </TypeIdentifier>
+  </Interface>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
